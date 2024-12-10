@@ -37,6 +37,8 @@ jobs:
         run: |
           terraform init
 
+          terraform import aws_security_group.docdb_sg sg-0b07368d446355324
+
           # state
           terraform state push terraform.tfstate
 
