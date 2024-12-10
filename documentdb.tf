@@ -1,7 +1,7 @@
 # DocumentDB Cluster
 resource "aws_docdb_cluster" "docdb_cluster" {
   cluster_identifier       = "digidine-docdb-cluster"
-  master_username          = "admin"
+  master_username          = "root"
   master_password          = "Digidine2024!2024"
   
   # Usando o grupo de segurança existente
