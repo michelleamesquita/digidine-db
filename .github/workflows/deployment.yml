@@ -36,4 +36,6 @@ jobs:
         working-directory: .
         run: |
           terraform init
+          terraform import aws_docdb_subnet_group.docdb_subnet_group digidine-docdb-subnet-group
+
           terraform apply -auto-approve
