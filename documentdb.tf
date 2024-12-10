@@ -15,14 +15,18 @@ resource "aws_docdb_cluster" "docdb_cluster" {
 resource "aws_docdb_subnet_group" "docdb_subnet_group" {
   name        = "digidine-docdb-subnet-group"
   description = "Subnet group for DocumentDB cluster"
-  subnet_ids  = ["subnet-0c5488876c338133f", "subnet-0eed11c225de65036", "subnet-0c8680c9b686d74ea"]
+  subnet_ids  = [
+    "subnet-0c5488876c338133f", # Subnet correta
+    "subnet-0eed11c225de65036", # Subnet correta
+    "subnet-0c8680c9b686d74ea"  # Subnet correta
+  ]
 }
 
 # Security Group para DocumentDB
 resource "aws_security_group" "docdb_sg" {
   name        = "digidine-docdb-sg"
   description = "Security group for DocumentDB cluster"
-  vpc_id      = "vpc-014eb1b4108e08384"
+  vpc_id      = "vpc-0711419b848ba95af" # VPC correto
 
   ingress {
     from_port   = 27017
