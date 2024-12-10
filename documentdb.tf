@@ -22,7 +22,7 @@ resource "aws_docdb_subnet_group" "docdb_subnet_group" {
 resource "aws_security_group" "docdb_sg" {
   name        = "digidine-docdb-sg"
   description = "Security group for DocumentDB cluster"
-  vpc_id      = "vpc-028adccd04bfc371d"
+  vpc_id      = "vpc-014eb1b4108e08384"
 
   ingress {
     from_port   = 27017
