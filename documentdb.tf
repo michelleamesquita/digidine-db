@@ -15,7 +15,7 @@ resource "aws_docdb_cluster" "docdb_cluster" {
 resource "aws_docdb_subnet_group" "docdb_subnet_group" {
   name        = "digidine-docdb-subnet-group"
   description = "Subnet group for DocumentDB cluster"
-  subnet_ids  = ["subnet-0ed2012a602007132", "subnet-0b94c50396a512ce1", "subnet-02ab00ddbcaf406e8"]
+  subnet_ids  = ["subnet-0c5488876c338133f", "subnet-0eed11c225de65036", "subnet-0c8680c9b686d74ea"]
 }
 
 # Security Group para DocumentDB
